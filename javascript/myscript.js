@@ -35,12 +35,20 @@ for (let i = 0; i < students.length; i++){
 
 let newStudents = [];
 
-for (let j = 0; j < 3; j++){
+for (let j = 0; j < 1; j++){
 
-    newStudents.push(allievo = {name : prompt("inserisci il nome dello studente"),
-    surname : prompt("inserisci il cognome dello studente"),
-    age : prompt("inserisci l'età dello studente"),
-});
-
+    newStudents.push(nuovoAllievo());
 }
-console.log(newStudents[allievo.name] + " " + newStudents[allievo.surname] + " " + newStudents[allievo.age]);
+
+function nuovoAllievo(allievoNumero, nome, cognome, anni){
+
+    allievoNumero = {nome : prompt("inserisci il nome dello studente"),
+    cognome : prompt("inserisci il cognome dello studente"),
+    anni : prompt("inserisci l'età dello studente"),
+};
+}
+
+for (let k = 0; k < newStudents.length; k++){
+
+    console.log(newStudents[k].nome + " " + newStudents[k].cognome);
+};
