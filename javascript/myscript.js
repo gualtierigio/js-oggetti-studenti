@@ -10,7 +10,7 @@ for (let studentData in student){
     console.log(student[studentData]);
 };
 
-let students = [ "",
+let students = [
     student1 = {
         name : "Baby",
         surname : "Shark",
@@ -28,6 +28,19 @@ let students = [ "",
     }
 ];
 
-for (let studentsData in students){
-    console.log(students[1][studentsData.name]);
-};
+for (let i = 0; i < students.length; i++){
+
+    console.log(students[i].name + " " + students[i].surname);
+}
+
+let newStudents = [];
+
+for (let j = 0; j < 3; j++){
+
+    newStudents.push(allievo = {name : prompt("inserisci il nome dello studente"),
+    surname : prompt("inserisci il cognome dello studente"),
+    age : prompt("inserisci l'età dello studente"),
+});
+
+}
+console.log(newStudents[allievo.name] + " " + newStudents[allievo.surname] + " " + newStudents[allievo.age]);
